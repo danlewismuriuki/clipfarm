@@ -8,9 +8,14 @@ import sys
 
 router = APIRouter()
 
-TEMP_DIR = "temp_videos"
-OUTPUT_DIR = "cleaned_videos"
-WATERMARK_CLI_PATH = "../WatermarkRemover-AI/remwm.py"
+# TEMP_DIR = "temp_videos"
+# OUTPUT_DIR = "cleaned_videos"
+# WATERMARK_CLI_PATH = "../WatermarkRemover-AI/remwm.py"
+
+
+TEMP_DIR = "/content/drive/MyDrive/clipfarm/temp_videos"
+OUTPUT_DIR = "/content/drive/MyDrive/clipfarm/cleaned_videos"
+WATERMARK_CLI_PATH = "/content/drive/MyDrive/WatermarkRemover-AI/remwm.py"
 
 os.makedirs(TEMP_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
